@@ -1,4 +1,4 @@
-# My-first-Object-oriented-programing
+# My-project
 My first object-oriented project, model of bank
 
 and
