@@ -1,8 +1,9 @@
-# My-project
+## My-project
+
 My first object-oriented project, model of bank
+=====================================================
+etc
 
-and
+* postfix and calculation
 
-postfix and calculation
-
-polynomial multiply
+* polynomial multiply
