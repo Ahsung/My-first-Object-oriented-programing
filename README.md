@@ -2,9 +2,8 @@
 
 My first object-oriented project, model of bank
 =====================================================
-# etc
 ------------------------------------------------------
-
+## etc
 
 * postfix and calculation
 
