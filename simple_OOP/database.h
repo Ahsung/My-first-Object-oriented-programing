@@ -26,7 +26,7 @@ public:
 		this->in.close();
 	}
 	Database(string filename) {
-		this->copen.open(filename,ios :: out | ios::app | ios::binary); //Object for file Create. if already exist, nothing activ
+		this->copen.open(filename,ios :: out | ios::app | ios::binary); //Object for file Create.
 		this->mout.open(filename, ios :: out | ios :: in | ios::binary);
 		this->in.open(filename, ios::in | ios::binary);
 		// get size
@@ -59,8 +59,10 @@ void Database<T>::write(T &data,int idx) {
 
 	if (idx >= data_size) {
 		
-		this->mout.seekp(0,ios::end);
-		this->mout.write((char *)&data, sizeof(data));
+// 		this->mout.seekp(0,ios::end);
+// 		this->mout.write((char *)&data, sizeof(data));
+		this->copen.write((char *)&data, sizeof(data)); // atomic append 
+		
 		this->data_size++;
 	}
 	else {
